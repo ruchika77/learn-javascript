@@ -15,8 +15,8 @@ describe('002-math-world', ()=>{
             expect(isAmstrong(370)).toBeTruthy();
         });
         it('should return false when argument is not an amstrong number', ()=>{
-            expect(isAmstrong(3)).toBeTruthy();
-            expect(isAmstrong(9)).toBeTruthy();
+            expect(isAmstrong(3)).toBeFalsy();
+            expect(isAmstrong(9)).toBeFalsy();
         });
     });
 });

@@ -17,11 +17,11 @@ describe('002-math-world', ()=>{
             expect(isEven(10000000000)).toBeTruthy();
         });
         it('should return false when argument is an odd number', ()=>{
-            expect(isEven(3)).toBeTruthy();
-            expect(isEven(9)).toBeTruthy();
-            expect(isEven(31)).toBeTruthy();
-            expect(isEven(333333)).toBeTruthy();
-            expect(isEven(10000000001)).toBeTruthy();
+            expect(isEven(3)).toBeFalsy();
+            expect(isEven(9)).toBeFalsy();
+            expect(isEven(31)).toBeFalsy();
+            expect(isEven(333333)).toBeFalsy();
+            expect(isEven(10000000001)).toBeFalsy();
         });
     });
 });
