@@ -23,13 +23,13 @@ fdescribe('005-json-world', () => {
         it('should return true when all the marks are above minimum number', () => {
             let sampleInput = marks;
             let expectedOutput = true;
-            let actualOutput = isAllPass(passMark, sampleInput);
+            let actualOutput = isAllPass(sampleInput, passMark);
             expect(actualOutput).toBe(expectedOutput);
         });
         it('should return false when all the marks are below minimum number', () => {
             let sampleInput = marksFail;
             let expectedOutput = true;
-            let actualOutput = isAllPass(passMark, sampleInput);
+            let actualOutput = isAllPass(sampleInput, passMark); 
             expect(actualOutput).toBe(expectedOutput);
         });
     });
