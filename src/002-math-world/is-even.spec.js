@@ -10,8 +10,16 @@ describe('002-math-world', ()=>{
             expect(isEven).toBeDefined();
         });
         it('should return true when argument is an even number', ()=>{
-            expect(isEven(2)).toBeTruthy();
-            expect(isEven(8)).toBeTruthy();
+            let sampleInput = 2;
+            let expectedOutput = true;
+            let actualOutput = isEven(sampleInput);
+            expect(actualOutput).toBe(expectedOutput);
+            
+            sampleInput = 8;
+            expectedOutput = true;
+            actualOutput = isEven(sampleInput);
+            expect(actualOutput).toBe(expectedOutput);
+
             expect(isEven(30)).toBeTruthy();
             expect(isEven(333332)).toBeTruthy();
             expect(isEven(10000000000)).toBeTruthy();
