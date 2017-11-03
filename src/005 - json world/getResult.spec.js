@@ -1,6 +1,6 @@
 //import functions
-const { isAllPass } = require('./getResult.js');
-const { getResult } = require('./getResult.js');
+const { isAllPass, getResult } = require('./getResult.js');
+
 // to test all functions in getResult.js
 //var allStudents = require('E:/Ruchi/jupyter-notebooks/data/student-data.json');
 var testStudentData = [
@@ -8,10 +8,10 @@ var testStudentData = [
     { "Name": "Shiva", "gender": "Male", "marks": [35, 65, 66, 68, 44, 29] },
     { "Name": "Crystal", "gender": "Female", "marks": [38, 48, 62, 89] },
 ]
-var marks = [23, 67, 55, 43, 89, 54];
-var passMark = 10;
-var marksFail = [1, 2, 3, 4, 5, 6];
 
+const marks = [23, 67, 55, 43, 70, 54];
+const positiveTestPassMark = 10;
+const negitiveTestPassMark = 80;
 
 fdescribe('005-json-world', () => {
 
