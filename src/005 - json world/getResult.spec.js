@@ -11,9 +11,9 @@ var testStudentData = [
 
 const marks = [23, 67, 55, 43, 70, 54];
 const positiveTestPassMark = 10;
-const negitiveTestPassMark = 80;
+const negativeTestPassMark = 80;
 
-fdescribe('005-json-world', () => {
+describe('005-json-world', () => {
 
     //to test isAllPass function
     describe('isAllPass()', () => {
@@ -21,25 +21,23 @@ fdescribe('005-json-world', () => {
             expect(isAllPass).toBeDefined();
         });
         it('should return true when all the marks are above minimum number', () => {
-            let sampleInput = marks;
             let expectedOutput = true;
-            let actualOutput = isAllPass(sampleInput, passMark);
+            let actualOutput = isAllPass(marks, positiveTestPassMark);
             expect(actualOutput).toBe(expectedOutput);
         });
         it('should return false when all the marks are below minimum number', () => {
-            let sampleInput = marksFail;
-            let expectedOutput = true;
-            let actualOutput = isAllPass(sampleInput, passMark); 
+            let expectedOutput = false;
+            let actualOutput = isAllPass(marks, negativeTestPassMark); 
             expect(actualOutput).toBe(expectedOutput);
         });
     });
-    describe('getResult()', () => {
+    fdescribe('getResult()', () => {
         it('should be defined', () => {
             expect(getResult).toBeDefined();
         });
         it('should return json object', () => {
             let sampleInput = testStudentData[0];
-            let expectedOutput = ({ firstName: 'Ruchika', result: 'Pass' });
+            let expectedOutput = { firstName: 'Ruchika', result: 'Pass' };
             let actualOutput = getResult(sampleInput);
             expect(actualOutput).toBe(expectedOutput);
         });

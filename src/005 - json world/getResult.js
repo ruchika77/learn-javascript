@@ -13,7 +13,7 @@ function getResult(record){
     var res = isAllPass(record.marks,45);
     output.firstName = record.firstName;
     if(res== true){
-        output.result = "Pass";
+        output.result = "Pass"; 
     }
     else{
         output.result = "Fail";
