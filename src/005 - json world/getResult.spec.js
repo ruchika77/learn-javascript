@@ -6,14 +6,14 @@ const { isAllPass, getResult } = require('./getResult.js');
 var testStudentData = [
     { "Name": "Ruchika", "gender": "Female", "marks": [62, 66, 88, 48, 62, 91] },
     { "Name": "Shiva", "gender": "Male", "marks": [35, 65, 66, 68, 44, 29] },
-    { "Name": "Crystal", "gender": "Female", "marks": [38, 48, 62, 89] },
-]
+    { "Name": "Kristal", "gender": "Female", "marks": [38, 48, 62, 89] },
+];
 
 const marks = [23, 67, 55, 43, 70, 54];
 const positiveTestPassMark = 10;
-const negativeTestPassMark = 80;
+const negativeTestPassMark = 90;
 
-describe('005-json-world', () => {
+fdescribe('005-json-world', () => {
 
     //to test isAllPass function
     describe('isAllPass()', () => {
@@ -31,13 +31,13 @@ describe('005-json-world', () => {
             expect(actualOutput).toBe(expectedOutput);
         });
     });
-    fdescribe('getResult()', () => {
+    describe('getResult()', () => {
         it('should be defined', () => {
             expect(getResult).toBeDefined();
         });
         it('should return json object', () => {
             let sampleInput = testStudentData[0];
-            let expectedOutput = { firstName: 'Ruchika', result: 'Pass' };
+            let expectedOutput = { Name: 'Ruchika', result: 'Pass' };
             let actualOutput = getResult(sampleInput);
             expect(actualOutput).toBe(expectedOutput);
         });

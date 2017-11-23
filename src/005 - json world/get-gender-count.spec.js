@@ -1,6 +1,6 @@
 //import functions
 const { getGenderCounts } = require('./get-gender-count.js');
-var allStudents = require('E:/Ruchi/jupyter-notebooks/data/student-data.json');
+//var allStudents = require('E:/Ruchi/jupyter-notebooks/data/student-data.json');
 
 describe('005-json-world', () => {
     
