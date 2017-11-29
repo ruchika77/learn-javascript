@@ -36,6 +36,7 @@ describe('005-json-world', () => {
             expect(getResult).toBeDefined();
         });
         it('should return json object', () => {
+            // some code added & fixed
             let sampleInput = testStudentData[0];
             let expectedOutput = { firstName: 'Ruchika', result: 'Pass' };
             let actualOutput = getResult(sampleInput);
