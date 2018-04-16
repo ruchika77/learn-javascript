@@ -1,5 +1,5 @@
 // result = {female:243, male:257}
-var allStudents = require('E:/Ruchi/jupyter-notebooks/data/student-data.json');
+/*var allStudents = require('E:/Ruchi/jupyter-notebooks/data/student-data.json');
 // console.log("Data",allStudents); 
 function getGenderCounts(jsonArray){
     var genderJson = {Female:0, Male:0};
@@ -16,4 +16,4 @@ function getGenderCounts(jsonArray){
 }
 module.exports = {
     getGenderCounts,
-};
+};*/
