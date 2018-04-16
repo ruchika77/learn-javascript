@@ -25,14 +25,7 @@ describe('AB Testing', function () {
         const heading = element(by.css('#content > div > h3')).getText().then((txt)=>{
             console.log(txt);
         });
-        // console.log( heading );
-        browser.sleep(3*1000); // 3 sec
-
-        // if (pageHeading === heading) {
-            
-        // } else {
-        //     console.log('Heading mismatch', heading, '!=', pageHeading);
-        // }
+       browser.sleep(3*1000); // 3 sec
     })
 
 });

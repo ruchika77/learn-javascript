@@ -1,6 +1,6 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['./herokuapp/page-ab-testing.js'],
+    specs: ['./herokuapp/page-broken-images.js'],
     onPrepare: function () {
         /**
          * If you are testing against a non-angular site - set ignoreSynchronization setting to true
