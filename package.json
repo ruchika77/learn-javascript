@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node spec/index.js"
+    "test": "node spec/index.js",
+    "e2e" : "protractor ./e2e-testing/protractor.conf.js"
   },
   "repository": {
     "type": "git",
