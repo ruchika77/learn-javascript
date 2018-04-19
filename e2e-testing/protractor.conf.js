@@ -1,6 +1,9 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['./herokuapp/page-dropdown.js'],
+    specs: ['./herokuapp/page-context-menu.js'],
+    capabilities: {
+        'browserName': 'firefox'
+      },
     onPrepare: function () {
         /**
          * If you are testing against a non-angular site - set ignoreSynchronization setting to true

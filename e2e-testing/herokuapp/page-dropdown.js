@@ -17,7 +17,7 @@ describe('AB Testing', function () {
         });
     });
 
-    it('should click on the drop down list and select 1st element', function(){
+    it('should click on the drop down list and select elements', function(){
         $$('#dropdown').click()
         browser.sleep(2000);
         $$('#dropdown > option:nth-child(2)').click()
