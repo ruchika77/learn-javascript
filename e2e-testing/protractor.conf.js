@@ -1,6 +1,6 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['./herokuapp/page-broken-images.js'],
+    specs: ['./herokuapp/page-dropdown.js'],
     onPrepare: function () {
         /**
          * If you are testing against a non-angular site - set ignoreSynchronization setting to true
@@ -14,5 +14,5 @@ exports.config = {
          * @type {boolean}
          */
         browser.ignoreSynchronization = true;
-      },
-  };
+    },
+};
