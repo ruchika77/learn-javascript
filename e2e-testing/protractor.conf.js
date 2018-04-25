@@ -1,9 +1,19 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['./herokuapp/page-context-menu.js'],
+    specs: ['./herokuapp/page-file-download.js'],
     capabilities: {
-        'browserName': 'firefox'
-      },
+        'browserName': 'chrome',
+        'chromeOptions': {
+
+            prefs: {
+                download: {
+                    'prompt_for_download': false,
+                    'directory_upgrade': true,
+                    'default_directory':  '/Users/ruchika.mehta/Ruchika_Learning/learn-javascript/src'
+                }
+            }
+        }
+    },
     onPrepare: function () {
         /**
          * If you are testing against a non-angular site - set ignoreSynchronization setting to true

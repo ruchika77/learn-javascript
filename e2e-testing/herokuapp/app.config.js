@@ -8,7 +8,8 @@ const config = {
         BROKEN_IMAGES: `${BASE}/broken_images`,
         CHECKBOXES: `${BASE}/checkboxes`,
         DISAPPEARING_ELEMENTS: `${BASE}/disappearing_elements`,
-        DROPDOWN: `${BASE}/dropdown`
+        DROPDOWN: `${BASE}/dropdown`,
+        DYNAMIC_LOADING: `${BASE}/dynamic_loading`
     }
 }
 
