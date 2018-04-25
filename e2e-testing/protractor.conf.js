@@ -1,6 +1,6 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['./herokuapp/page-file-download.js'],
+    specs: ['./herokuapp/page-form-authentication.js'],
     capabilities: {
         'browserName': 'chrome',
         'chromeOptions': {

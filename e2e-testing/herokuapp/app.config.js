@@ -9,7 +9,9 @@ const config = {
         CHECKBOXES: `${BASE}/checkboxes`,
         DISAPPEARING_ELEMENTS: `${BASE}/disappearing_elements`,
         DROPDOWN: `${BASE}/dropdown`,
-        DYNAMIC_LOADING: `${BASE}/dynamic_loading`
+        DYNAMIC_LOADING: `${BASE}/dynamic_loading`,
+        FORGET_PASSWORD: `${BASE}/forgot_password`,
+        FORM_AUTHENTICATION: `${BASE}/login`
     }
 }
 
