@@ -11,7 +11,8 @@ const config = {
         DROPDOWN: `${BASE}/dropdown`,
         DYNAMIC_LOADING: `${BASE}/dynamic_loading`,
         FORGET_PASSWORD: `${BASE}/forgot_password`,
-        FORM_AUTHENTICATION: `${BASE}/login`
+        FORM_AUTHENTICATION: `${BASE}/login`,
+        FRAMES:`${BASE}/frames`
     }
 }
 
