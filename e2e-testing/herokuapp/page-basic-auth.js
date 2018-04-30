@@ -1,9 +1,9 @@
 const { URLS } = require('./app.config');
-console.log(URLS);
+ 
 describe('Basic Auth', function () {
   it('should open the link for herrokuapp', function () {
     // opens the home page of the app
-    console.log(URLS.BASE)
+     
     browser.get(URLS.BASE);
     browser.sleep(2000);
   });

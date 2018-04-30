@@ -1,5 +1,5 @@
 const { URLS } = require('./app.config');
-console.log(URLS);
+
 describe('AB Testing', function () {
     it('should open the link for herrokuapp', function () {
         // opens the home page of the app

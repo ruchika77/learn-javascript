@@ -1,5 +1,5 @@
 const { URLS } = require('./app.config');
-console.log(URLS);
+ 
 describe('Broken Images', function () {
     it('should open the link for herrokuapp', function () {
         // opens the home page of the app

@@ -1,4 +1,4 @@
-const BASE = 'http://the-internet.herokuapp.com'
+const BASE = 'https://the-internet.herokuapp.com'
 
 const config = {
     URLS: {
