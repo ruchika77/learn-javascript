@@ -1,7 +1,7 @@
 const { URLS } = require('./app.config');
 
 
-fdescribe('AB Testing', function () {
+describe('AB Testing', function () {
     let img1 = element(by.css('div.figure:nth-child(3)'));
     let img2 = element(by.css('div.figure:nth-child(4)'));
     let img3 = element(by.css('div.figure:nth-child(5)'));

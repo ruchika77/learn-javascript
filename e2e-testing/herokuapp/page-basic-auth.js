@@ -12,6 +12,7 @@ describe('Basic Auth', function () {
     // To click the 2nd selector
     $$('#content > ul > li:nth-child(2) > a').click();
     //let username = 'admin';
+    browser.switchTo().alert().dismiss(); // click on Cancel
     browser.sleep(2000);
     console.log('WAKE UP!')
 
