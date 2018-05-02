@@ -12,7 +12,8 @@ const config = {
         DYNAMIC_LOADING: `${BASE}/dynamic_loading`,
         FORGET_PASSWORD: `${BASE}/forgot_password`,
         FORM_AUTHENTICATION: `${BASE}/login`,
-        FRAMES:`${BASE}/frames`
+        FRAMES:`${BASE}/frames`,
+        TYPO: `${BASE}/typos`
     }
 }
 

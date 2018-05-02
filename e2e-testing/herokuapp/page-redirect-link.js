@@ -1,6 +1,6 @@
 const { URLS } = require('./app.config');
 
-fdescribe('AB Testing', function () {
+describe('AB Testing', function () {
     let pageTitle = 'Redirection';
     let pageTitleSel = element(by.css('.example > h3:nth-child(1)'));
     let pageTitle1 = 'Status Codes';
@@ -23,7 +23,13 @@ fdescribe('AB Testing', function () {
         browser.sleep(2000);
         expect(pageTitleSel1.getText()).toContain(pageTitle1);
         $$('.example > ul:nth-child(3) > li:nth-child(1) > a:nth-child(1)').click(); //click on 200 code
-        
+        $$('.example > p:nth-child(2) > a:nth-child(3)').click(); // click to go back
+        $$('.example > ul:nth-child(3) > li:nth-child(2) > a:nth-child(1)').click(); // click on 301 code
+        $$('.example > p:nth-child(2) > a:nth-child(3)').click(); // click to go back
+        $$('.example > ul:nth-child(3) > li:nth-child(3) > a:nth-child(1)').click(); // click on 404 code
+        $$('.example > p:nth-child(2) > a:nth-child(3)').click(); // click to go back
+        $$('.example > ul:nth-child(3) > li:nth-child(4) > a:nth-child(1)').click(); // click on 500 code
+        $$('.example > p:nth-child(2) > a:nth-child(3)').click(); // click to go back
     })
 })
 
