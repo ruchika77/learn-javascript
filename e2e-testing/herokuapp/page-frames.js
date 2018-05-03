@@ -34,7 +34,7 @@ describe('AB Testing', function () {
         browser.driver.findElement(by.id('mce_0_ifr')).sendKeys(text);
         browser.sleep(6000);
 
-        //clear the text in fram body
+        //clear the text in frame body
         
         /*let field = element(by.css('mce_0_ifr')).getText().then((txt) => {
             console.log(txt);
